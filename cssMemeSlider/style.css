@@ -1,3 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Inter:wght@400;500;600;700&display=swap');
 /* font-family: 'Cormorant Garamond', serif;*/
 
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #9999CC;
+    font-family: 'Cormorant Garamond', serif; 
+    overflow-x: hidden;  
+}
+
+
+.main {
+}
+
+.wrapper {
+}
+
+.slider {
+   
+}
+
+.slider_list {
+}
+
+.slider_img {
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 65vw;
+    height: 80vh;
+    display: none;
+    border-radius: 5%;
+}
+._active {
+    display: block;
+}
+
+.wrap-position {
+    display: flex;
+    justify-content: space-between;
+    width: 65vw;
+    margin-top: 1vh;
+    margin-left: 16vw;
+    flex-wrap: wrap-reverse;
+}
+
+.slider_descriptions {
+    text-wrap: wrap;
+}
+
+.description {
+    width: 35vw;
+    list-style-type: none;
+    display: none;
+}
+
+._active-description{
+    display: block;
+}
+
+.description_text {
+    margin: 0;
+    font-size: 1.5em;
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(15, 15, 14);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+.slider_dots {
+    display: flex;
+    justify-content: space-between;
+    width: 8em;
+}
+
+.dot {
+    cursor: pointer;
+    height: 1.2em;
+    width: 1.2em;
+    border-radius: 50%;
+    background-color: #e4f406;
+    list-style-type: none;
+}
+
+.dot:hover {
+ background-color: aliceblue;
+}
+
+._active-dot {
+    height: 1em;
+    width: 1em;
+    border: 0.2em solid #e4f406;
+    background-color: aliceblue;
+}
+
+.dot-link {
+    margin-top: -0.7vh;
+    margin-left: -0.4vh;
+    display: inline-block;
+    cursor: pointer;
+    height: 1.6em;
+    width: 1.5em;
+}
+
+@media (max-width: 716px) {
+    .slider_dots {
+        margin: 1vh auto;
+    }
+
+    .description {
+        margin-left: -3vh;
+        margin-top: -2vh;
+        width: 60vw;
+    }
+
+    .description_text {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .description {
+        margin-left: -7vh;
+        margin-top: -3.5vh;
+        width: 65vw;
+    }
+
+
+    .description_text {
+        font-size: 1.1em;
+    }
+}
