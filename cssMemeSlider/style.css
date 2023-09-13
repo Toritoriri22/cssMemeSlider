@@ -4,7 +4,7 @@
 body {
     width: 100%;
     height: 100%;
-    background-color: #9999CC;
+    background-color: #a7a7c8;
     font-family: 'Cormorant Garamond', serif; 
     overflow-x: hidden;  
 }
@@ -27,7 +27,7 @@ body {
     margin: 0 auto;
     margin-top: 2%;
     width: 65vw;
-    height: 80vh;
+    max-height: 80vh;
     display: none;
     border-radius: 5%;
 }
@@ -79,19 +79,19 @@ body {
     height: 1.2em;
     width: 1.2em;
     border-radius: 50%;
-    background-color: #e4f406;
+    background-color: #e3ec6e;
     list-style-type: none;
 }
 
 .dot:hover {
- background-color: aliceblue;
+ background-color: rgb(235, 237, 238);
 }
 
 ._active-dot {
     height: 1em;
     width: 1em;
-    border: 0.2em solid #e4f406;
-    background-color: aliceblue;
+    border: 0.2em solid #e3ec6e;
+    background-color: rgb(235, 237, 238);
 }
 
 .dot-link {
@@ -114,21 +114,13 @@ body {
         width: 60vw;
     }
 
-    .description_text {
-        font-size: 1.3em;
-    }
 }
 
 @media (max-width: 540px) {
 
     .description {
-        margin-left: -7vh;
         margin-top: -3.5vh;
         width: 65vw;
     }
 
-
-    .description_text {
-        font-size: 1.1em;
-    }
 }
