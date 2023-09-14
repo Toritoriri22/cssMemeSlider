@@ -4,40 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
     <title>Slider</title>
 </head>
 <body>
-
     <main class="main">
         <div class="wrapper">
 			<div class="slider">
-				<div class="slider_list">
-					<img class="slider_img _active"  src="./img/typo-in-code.jpg" alt="slide_first">
-					<img class="slider_img " src="./img/framework-meme.jpg" alt="slide_second">
-					<img class="slider_img " src="./img/start-a-cult.jpg" alt="slide_three">
-					<img class="slider_img " src="./img/let's-celebrate.jpg" alt="slide_four">
-					<img class="slider_img " src="./img/buy-buy.jpg" alt="slide_five">
-				</div>
-                <div class="wrap-position">
+                <input class="slider_dot" type="radio" id="dot1" name="pagination" checked>
+                <input class="slider_dot" type="radio" id="dot2" name="pagination">
+                <input class="slider_dot" type="radio" id="dot3" name="pagination">
+                <input class="slider_dot" type="radio" id="dot4" name="pagination">
+                <input class="slider_dot" type="radio" id="dot5" name="pagination">
+
+                <div class="slider_wrap">
+				    <div class="slider_list">
+                        <img class="slider_img img1"  src="./img/typo-in-code.jpg" alt="slide_first">
+                        <img class="slider_img img2" src="./img/framework.jpg" alt="slide_second">
+                        <img class="slider_img img3" src="./img/start-a-cult.jpg" alt="slide_three">
+                        <img class="slider_img img4" src="./img/lets-celebrate.jpg" alt="slide_four">
+                        <img class="slider_img img5" src="./img/Bye-bye.jpg" alt="slide_five">
+				    </div>
+                </div>
+
+                <div class="wrap__bottom-position">
+
                     <ul class="slider_descriptions">
-                        <li class="description _active-description"><p class="description_text">Oh! Just a typo in the code but several nerve cells have already died :)</p></li>
-                        <li class="description "><p class="description_text">Sometimes it's tempting to go to the dark side of frameworks. Isn't it?</p></li>
-                        <li class="description "><p class="description_text">Perhaps this cat wants to organize a cult of javascript worship. Would you join?</p></li>
-                        <li class="description "><p class="description_text">My slider is coming to an end (Oh, finally!). Let's celebrate!</p></li>
-                        <li class="description "><p class="description_text">May everything be great for you! Bye-bye.</p></li>
+                        <li class="description text1"><p class="description_text">Oh! Just a typo in the code but several nerve cells have already died :)</p></li>
+                        <li class="description text2"><p class="description_text">Sometimes it's tempting to go to the dark side of frameworks. Isn't it?</p></li>
+                        <li class="description text3"><p class="description_text">Perhaps this cat wants to organize a cult of javascript worship. Would you join?</p></li>
+                        <li class="description text4"><p class="description_text">My slider is coming to an end (Oh, finally!). Let's celebrate!</p></li>
+                        <li class="description text5"><p class="description_text">May everything be great for you! Bye-bye.</p></li>
                     </ul>
-                    <ul class="slider_dots">
-                        <li class="dot _active-dot"><a href="#" class="dot-link"></a></li>
-                        <li class="dot"><a href="#" class="dot-link"></a></li>
-                        <li class="dot"><a href="#" class="dot-link"></a></li>
-                        <li class="dot"><a href="#" class="dot-link"></a></li>
-                        <li class="dot"><a href="#" class="dot-link"></a></li>
-                    </ul>
+                    
+                    <div class="slider_navigation">
+                        <label class="navigation" for="dot1"><span class="navigation_span"></span></label>
+                        <label class="navigation" for="dot2"><span class="navigation_span"></span></label>
+                        <label class="navigation" for="dot3"><span class="navigation_span"></span></label>
+                        <label class="navigation" for="dot4"><span class="navigation_span"></span></label>
+                        <label class="navigation" for="dot5"><span class="navigation_span"></span></label>
+                    </div>
                 </div>
 			</div>
         </div>
     </main>
 
-    <script src="./index.js"></script>
 </body>
 </html>

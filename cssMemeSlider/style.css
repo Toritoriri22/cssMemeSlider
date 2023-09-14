@@ -6,10 +6,121 @@ body {
     height: 100%;
     background-color: #a7a7c8;
     font-family: 'Cormorant Garamond', serif; 
-    overflow-x: hidden;  
+    overflow-x: hidden; 
+    box-sizing: border-box; 
 }
 
 
+.main {
+    display: flex;
+    justify-content: center;
+}
+.wrapper {
+   
+}
+.slider {
+    width: 65vw;
+    height: 100vh;
+    margin: 2vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2vh;
+}
+
+.slider_dot {
+    display: none;
+}
+
+.slider_wrap {
+  overflow: hidden;
+}
+
+.slider_list {
+    display: flex;
+    transition: all 0.8s ease-in-out;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.slider_img {
+    width: 100%;
+    height: 100%;
+    flex-shrink:0;
+    border-radius: 5%;
+}
+
+.wrap__bottom-position {
+
+}
+
+.slider_descriptions {
+
+}
+
+.description {
+
+}
+
+.description_text {
+    font-size: 1.5em;
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(15, 15, 14);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+.slider_navigation {
+
+}
+
+.navigation {
+
+}
+
+.navigation_span {
+    display: inline-block;
+    cursor: pointer;
+    height: 1.2em;
+    width: 1.2em;
+    border-radius: 50%;
+    background-color: #e3ec6e;
+    transition: 0.3s ease-in;
+}
+
+.navigation_span:hover {
+    background-color: rgb(235, 237, 238);
+    scale: 1.2;
+}
+
+.slider_dot:checked~.wrap__bottom-position .slider_navigation .navigation_span {
+    height: 1.2em;
+    width: 1.2em;
+    border: 0.2em solid #e3ec6e;
+    background-color: rgb(235, 237, 238);
+}
+
+#dot1:checked~.slider_wrap .slider_list {
+    transform: translate(0);
+  }
+  #dot2:checked~.slider_wrap .slider_list  {
+    transform: translateX(-100%);
+  }
+  #dot3:checked~.slider_wrap .slider_list {
+    transform: translateX(-200%);
+  }
+  #dot4:checked~.slider_wrap .slider_list {
+    transform: translateX(-300%);
+  }
+  #dot5:checked~.slider_wrap .slider_list {
+    transform: translateX(-400%);
+  }
+
+
+
+/*
 .main {
 }
 
@@ -35,7 +146,7 @@ body {
     display: block;
 }
 
-.wrap-position {
+.wrap__bottom-position {
     display: flex;
     justify-content: space-between;
     width: 65vw;
@@ -123,4 +234,4 @@ body {
         width: 65vw;
     }
 
-}
+}*/
