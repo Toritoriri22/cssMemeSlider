@@ -44,7 +44,7 @@ body {
     width: 100%;
     height: 100%;
     flex-shrink:0;
-    border-radius: 5%;
+    
 }
 
 .wrap__bottom-position {
@@ -85,7 +85,7 @@ body {
 }
 
 .navigation {
-    margin-left: 1vh;
+    margin-left: 0.4em;
     cursor: pointer;
     height: 1.7em;
     width: 1.7em;
@@ -103,7 +103,6 @@ body {
 
 .navigation:hover {
     background-color: rgb(235, 237, 238);
-    scale: 1.2;
 }
 
 #dot1:checked ~ .wrap__bottom-position .slider_navigation .navigation:first-child,
@@ -156,11 +155,24 @@ body {
 }
 
 
-  @media (max-width: 700px) {
+@media (max-width: 700px) {
     .wrap__bottom-position {
         flex-wrap: wrap-reverse;
     }
 
+    .slider_navigation {
+        margin-left: 18vw;
+    }
+
+    .slider_descriptions {
+        margin-top: 2vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .slider_navigation {
+        margin-left: 17vw;
+    }
 }
 
 /*
